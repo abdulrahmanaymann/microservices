@@ -1,0 +1,8 @@
+com\example\SA2\spring\entity\Offer.class
+com\example\SA2\spring\controller\ClientController.class
+com\example\SA2\spring\ConsumerApplication.class
+com\example\SA2\spring\entity\dto\OfferDto.class
+com\example\SA2\spring\repository\OfferRepo.class
+com\example\SA2\spring\config\Config.class
+com\example\SA2\spring\service\ConsumerService.class
+com\example\SA2\spring\service\DatabaseService.class

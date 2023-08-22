@@ -1,0 +1,19 @@
+server:
+  port: 8081
+
+topic:
+  name: offerTopic
+
+spring:
+  kafka:
+    consumer:
+      group-id: "default"
+      bootstrap-servers: 'kafka:29092'
+  datasource:
+    url: jdbc:mysql://mysqldb:3306/offersDB?useSSL=false
+    username: root
+    password: 1234
+
+  jpa:
+    properties.hibernate.dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate.ddl-auto: update

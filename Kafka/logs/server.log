@@ -1,0 +1,13 @@
+[2023-05-04 17:11:14,461] WARN Close of session 0x1000d7bccf90000 (org.apache.zookeeper.server.NIOServerCnxn)
+java.io.IOException: An existing connection was forcibly closed by the remote host
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:324)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:522)
+	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:154)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)

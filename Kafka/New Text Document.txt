@@ -1,0 +1,18 @@
+1- download kafka apache 
+-->https://www.apache.org/dyn/closer.cgi?path=/kafka/3.4.0/kafka_2.13-3.4.0.tgz
+
+2- run zookeeper first before kafka
+-->.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+
+3-run kafka
+-->.\bin\windows\kafka-server-start.bat .\config\server.properties
+
+4- create topic 
+--> .\bin\windows\kafka-topics.bat --create --topic first-topic --bootstrap-server localhost:9092
+
+5- create producer to publish
+-->.\bin\windows\kafka-console-producer.bat --topic first-topic --bootstrap-server localhost:9092
+
+6--create consumer to cosume (retrieve)
+-->.\bin\windows\kafka-console-consumer.bat --topic first-topic --from-beginning--bootstrap-server localhost:9092
+
